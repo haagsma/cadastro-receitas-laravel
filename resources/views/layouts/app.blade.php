@@ -36,8 +36,10 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+                    @if (!Auth::guest())
                         &nbsp;<li><a href="{{ url('/')  }}">Lista</a></li>
                         &nbsp;<li><a href="{{ url('/adicionar')  }}">Adicionar</a></li>
+                            @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
